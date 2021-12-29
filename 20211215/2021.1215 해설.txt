@@ -1,0 +1,5 @@
+main03 7번에서 Magician 7번으로 가고
+Magician 7번에서 Commoner 12번으로 가고
+Commoner 12번에서 Commoner 3~8번 n,lv,hp,mp 값들을 입력받고
+Magician 9번으로 넘어가서 mDam을 입력받고
+Magician 12~14번을 Main03 8번으로 가서 입력받는다.

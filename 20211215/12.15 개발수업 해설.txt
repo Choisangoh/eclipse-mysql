@@ -1,0 +1,16 @@
+프로그램 시작
+main 8 우변 실행 
+Magician 5으로 이동 (같이 전달되는 "오늘의마법사"가 name에 "오늘의마법사"를 받음)
+Magician 6에 의해 Commoner 생성자 호출("오늘의마법사" 전달)
+Commoner 14으로 이동후 20번까지 그대로 실행
+Magician 6 복귀하고 7로 인해 종료하고 Main 8로 복귀
+Main 8 좌변에 우변의 결과를 대입
+Main 10에 의해서 Magician 23으로 이동
+Magician 25에 의해서 Commoner 25로 이동
+Commoner 26에 의해서 hp값(20)을 돌려줄 준비를 하고
+Commoner 27 도달 후에 Magician 25로 돌아갈 때, hp값(20)을 호출위치에 대입
+
+
+
+
+
