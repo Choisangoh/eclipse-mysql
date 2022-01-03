@@ -147,13 +147,13 @@ SELECT * FROM usertbl WHERE height < ANY
   -- ANY와 SOME은 사실상 차이가 없는 구문이라고 봐도 무방하다.
   -- ANY자리에 SOME을 대신 넣어도 똑같이 작동한다.
 
--- ALL 구문을 사용하면 163, 180, 185 모든 데이터에 대해 AND로 처리된다.
+-- ALL 구문을 사용하면 173, 177 모든 데이터에 대해 AND로 처리된다.
 -- 개별값 모두에 대해 AND처리가 붙고 그래서 아래와 같이
--- (height < 163) AND (height < 180) AND (height < 185)
--- 3개의 조건을 다 만족하는 해야한다.
+-- (height < 173) AND (height < 177)
+-- 모든 조건을 만족시켜야 한다.
 SELECT * FROM usertbl WHERE height < ALL
-  (SELECT height FROM usertbl WHERE addr = '서울');
--- ALL는 AND로 연결된다는 특성 163보다 작은 값만 TRUE로 판정한다.
+  (SELECT height FROM usertbl WHERE addr = '부산');
+-- ALL는 AND로 연결된다는 특성상 173보다 작은 값의 데이터가 전부 잡혀나온다.
 
 
 
