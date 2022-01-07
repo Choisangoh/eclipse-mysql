@@ -30,7 +30,7 @@ SELECT * FROM usertbl WHERE addr = '서울';
 -- 관계연산자를 이용해서 대소비교(숫자 자료만 가능)를 하거나 
 -- and, or 을 이용해 조건 여러개를 연결할 수 있다.
 
--- 키 170이상인 사람만 조회.
+-- 키 170이상인 사람만 조회. 
 SELECT * FROM usertbl WHERE height >= 170;
 
 -- and를 이용해 91~99년생까지만 조회하는 구문 만들기
