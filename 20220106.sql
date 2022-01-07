@@ -1,5 +1,5 @@
 -- 권한 뺏기
--- GRANT 들어갈 자리에 REVOLE 사용
+-- GRANT 들어갈 자리에 REVOKE 사용
 -- 단, REVOKE는 GRANT와 TO FROM과 연동해서 쓴다.
 -- REVOKE 권한명... ON DB이름.테이블이름 FROM 계정명;
 
