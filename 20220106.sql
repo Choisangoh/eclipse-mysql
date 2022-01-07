@@ -109,4 +109,8 @@ UNION
 SELECT * FROM student s RIGHT OUTER JOIN membership m ON s.user_name = m.user_name;
 -- 위에 UNION으로 처리되는 구문은 user_name이 두번 출력되는 문제가 있다.
 -- 한번만 출력되도록 해보세요.
-
+SELECT m.user_name, s.user_addr, m.user_point FROM student s 
+RIGHT OUTER JOIN membership m ON s.user_name = m.user_name
+UNION
+SELECT s.user_name, s.user_addr, m.user_point FROM student s 
+LEFT OUTER JOIN membership m ON s.user_name = m.user_name;
