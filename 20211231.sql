@@ -49,7 +49,7 @@ CREATE TABLE userTbl (
    phone_number varchar(11),
    height int(3),
    reg_date DATE
-   );
+   ); 
    
    
 -- auto_increment(자동증가)
