@@ -8,7 +8,7 @@ create database ict_practice default character set utf8;
 /* default schema 지정은 명령어로도 가능하다.
 use 스키마명; 을 사용하면 좌측 schema에서 우클릭 후 default스키마 지정한 효과를 낼 수 있다. */
 use sys;
-use ict_practice;
+use ict_practice; 
 
 /* 테이블 생성 명령
 primary key - 컬럼의 주요 키를 뜻하며, 중복데이터를 방지한다.
